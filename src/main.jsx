@@ -6,6 +6,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './pages/Home.jsx';
+import App from './App.jsx'
+import PropertyPage from './components/PropertyPage/PropertyPage.jsx';
+import Register from './components/register/Register.jsx';
+import Login from './components/login/Login.jsx';
 
 
 
@@ -14,29 +18,28 @@ import Home from './pages/Home.jsx';
 const router = createBrowserRouter([
   {
     path :"/",
-    element : <Home/>,
+    element : <App/>,
     
-    // children:[
-    //   {
-    //     path:"ExpenseFixed",
-    //     element: <ExpenseFixed/>
-    //   },
-    //   {
-    //     path:"Track-Expense",
-    //     element: <TableExpense/>
-    //   },
-    //   {
-    //     path:"Category",
-    //     element: <TableCategorys/>
-    //   },
-    //   {
-    //     path:"Budget-Settings",
-    //     element: <TableBudgetSettings/>
-    //   },
+    children:[
+      {
+        path:"/home",
+        element: <Home/>
+      },
+      {
+        path:"/dang-ky",
+        element: <Register/>
+      },
+      {
+        path:"/dang-nhap",
+        element: <Login/>
+      },
+      {
+        path:"/nha-ban-dat",
+        element: <PropertyPage/>
+      },
+    ]
+  
 
-    
-
-    // ]
   }
 ],
 
