@@ -78,7 +78,7 @@ export default function RealEstateProjects() {
         </select>
       </div>
 
-      <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div className="mt-4 grid cursor-pointer grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {projects.map((project) => (
           <div key={project.id} className="bg-white flex shadow-md rounded-lg overflow-hidden">
             <img src={project.image} alt={project.name} className="w-48 h-48 object-cover" />

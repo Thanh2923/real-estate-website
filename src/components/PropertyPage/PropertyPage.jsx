@@ -69,7 +69,7 @@ const PropertyPage = () => {
           </ul>
         </div>
 
-        <div className="md:col-span-3 space-y-6">
+        <div className="md:col-span-3 cursor-pointer space-y-6">
           {properties.map((property) => (
             <div key={property.id} className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
               <div className="md:w-1/3 w-full relative">

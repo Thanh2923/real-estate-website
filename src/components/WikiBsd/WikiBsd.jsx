@@ -26,7 +26,7 @@ const WikiBds = () => {
      
       <div className="grid md:grid-cols-3 gap-6 mt-6">
        
-        <div className="md:col-span-2 relative">
+        <div className="md:col-span-2  cursor-pointer relative">
           <img
             src={Image}
             alt="Featured"
@@ -72,7 +72,7 @@ const WikiBds = () => {
       <section className="py-10">
       <h2 className="text-2xl font-bold text-center mb-6">Chuyên mục</h2>
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 cursor-pointer sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {categories.map((category, index) => (
   <div key={index} className="flex flex-col items-center">
     <div className="w-24 h-24 bg-red-100 flex items-center justify-center rounded-full">

@@ -10,7 +10,7 @@ const NewsSection = () => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Bài viết lớn */}
-        <div className="md:col-span-2 relative">
+        <div className="md:col-span-2 cursor-pointer relative">
           <img src={Image} alt="News" width={800} height={400} className="rounded-lg" />
           <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-4 text-white">
             <p className="text-sm">05/02/2025 14:00 • Tin tức</p>
