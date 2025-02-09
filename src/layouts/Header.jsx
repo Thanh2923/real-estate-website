@@ -10,6 +10,7 @@ const Header = () => {
       setIsOpen((prev)=>!prev);
     
      }
+
   return (
     <div className="w-full h-[60px] shadow-lg fixed top-0 left-0 z-50  font-semibold  bg-white px-5 text-[14px] grid items-center grid-cols-12 ">
       <div className='col-span-2 cursor-pointer'>
@@ -23,8 +24,8 @@ const Header = () => {
       group-hover:scale-x-100 group-hover:w-full transition-all duration-300"></span>
     </Link>
         {Category && Category.map((cate) => (
-  <div key={cate.id} className="relative z-10 group">
-    <Link to="/" className="py-3 relative inline-block">
+  <div key={cate. id} className="relative z-10 group">
+    <Link to={cate.url} className="py-3 relative inline-block">
       {cate.name}
       <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transform scale-x-0 
       group-hover:scale-x-100 group-hover:w-full transition-all duration-300"></span>
@@ -57,7 +58,7 @@ const Header = () => {
     </Link>
         {Category && Category.map((cate) => (
   <div key={cate.id} className="relative z-10 group">
-    <Link to="/" className="py-3 z-10 relative inline-block">
+    <Link to={cate.url} className="py-3 z-10 relative inline-block">
       {cate.name}
       <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transform scale-x-0 
       group-hover:scale-x-100 group-hover:w-full transition-all duration-300"></span>

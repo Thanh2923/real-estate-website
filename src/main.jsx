@@ -7,13 +7,13 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home.jsx';
 import App from './App.jsx'
-import PropertyPage from './components/PropertyPage/PropertyPage.jsx';
 import Register from './components/register/Register.jsx';
 import Login from './components/login/Login.jsx';
-
-
-
-
+import { HouseList } from './pages/HouseList.jsx';
+import { ProjectPage } from './pages/ProjectPage.jsx';
+import WikiBdsPage from './pages/WikiBsdPage.jsx';
+import NewsPage from './pages/NewsPage.jsx';
+import ProductBdsPage from './pages/ProductBdsPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -35,7 +35,24 @@ const router = createBrowserRouter([
       },
       {
         path:"/nha-ban-dat",
-        element: <PropertyPage/>
+        element: <HouseList/>
+      },
+      {
+        path:"/du-an",
+        element: <ProjectPage/>
+      },
+      {
+        path:"/wiki-bds",
+        element: <WikiBdsPage/>
+      },
+      {
+        path:"/tin-tuc",
+        element: <NewsPage/>
+      },
+
+      {
+        path:"/bds",
+        element: <ProductBdsPage/>
       },
     ]
   

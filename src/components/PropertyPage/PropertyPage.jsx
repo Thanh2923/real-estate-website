@@ -1,7 +1,9 @@
-import { FaSearch, FaMapMarkedAlt, FaRegBell, FaRegClock, FaFilter } from "react-icons/fa";
+import { FaSearch, FaMapMarkedAlt, FaRegClock, FaFilter } from "react-icons/fa";
 import { BsFillBookmarkFill } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
-
+import Image from '../../assets/images/bds1.jpg';
+import Image2 from '../../assets/images/bds2.jpg';
+import Image3 from '../../assets/images/bds3.jpg';
 const properties = [
   {
     id: 1,
@@ -9,7 +11,7 @@ const properties = [
     location: "Phủ Lý, Hà Nam",
     area: "120m²",
     price: "6.5 tỷ",
-    image: "/property1.jpg",
+    image: Image,
     tag: "Tin đặc biệt",
     time: "Hôm nay",
   },
@@ -19,7 +21,7 @@ const properties = [
     location: "Vinhomes, Hà Nội",
     area: "80m²",
     price: "3.2 tỷ",
-    image: "/property2.jpg",
+    image: Image2,
     tag: "Tin mới",
     time: "Hôm qua",
   },
@@ -29,7 +31,7 @@ const properties = [
     location: "Quận 9, TP. HCM",
     area: "70m²",
     price: "2.9 tỷ",
-    image: "/property3.jpg",
+    image: Image3,
     tag: "Tin đặc biệt",
     time: "2 ngày trước",
   },
