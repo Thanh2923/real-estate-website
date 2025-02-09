@@ -51,14 +51,14 @@ const Header = () => {
       <div className='w-full mobile cursor-pointer flex justify-center lg:col-auto col-span-2 lg:hidden sm:block '>
        <GrMenu onClick={handleClickShow} className='text-[24px] relative'/>
        {isOpen && <section className='nav flex  top-[60px] border-t-2  px-[10%] left-0 flex-col absolute  bg-white  w-[50%] gap-5 '>
-        <Link to="/" className="py-3 relative inline-block">
+        <Link to="/" onClick={() => setIsOpen(false)} className="py-3 relative inline-block">
          Trang chủ
       <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transform scale-x-0 
       group-hover:scale-x-100 group-hover:w-full transition-all duration-300"></span>
     </Link>
         {Category && Category.map((cate) => (
   <div key={cate.id} className="relative z-10 group">
-    <Link to={cate.url} className="py-3 z-10 relative inline-block">
+    <Link to={cate.url} onClick={() => setIsOpen(false)} className="py-3 z-10 relative inline-block">
       {cate.name}
       <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transform scale-x-0 
       group-hover:scale-x-100 group-hover:w-full transition-all duration-300"></span>
