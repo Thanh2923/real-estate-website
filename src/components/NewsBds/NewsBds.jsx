@@ -19,7 +19,7 @@ const NewsBds = () => {
   return (
     <section className="w-full flex justify-center">
       <div className="lg:w-[70%] w-full">
-        <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-2 font-bold text-2xl">
+        <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-2 font-bold text-xl">
           {NewsBdsData.map((news) => (
             <button
               key={news.id}

@@ -22,7 +22,7 @@ const RealEstateForYou = () => {
               alt={property.title}
               className="rounded-lg w-full h-48 object-cover"
             />
-            <h3 className="font-semibold text-sm px-2 py-2">{property.title}</h3>
+            <h3 className="font-semibold text-md px-2 py-2">{property.title}</h3>
 
             <div className="w-full flex px-2 gap-5">
               <span className="font-semibold text-sm text-red-600">{property.price}</span>
